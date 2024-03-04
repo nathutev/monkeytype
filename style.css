@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Type';
+  src: url('Type_Machine.ttf') format('truetype');
+}
+
+body { 
+  background-color: #2e2e2e; 
+  color: rgb(184, 184, 184); 
+  text-align: center; 
+  font-family: 'Type';
+  -webkit-user-select: none;
+  -ms-user-select: none; 
+  user-select: none;
+} 
+
+#wrapper { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+} 
+
+#heading-text { 
+  margin-bottom: 20px; 
+  font-size: 3rem; 
+  color: rgb(184, 184, 184); 
+} 
+
+#header { 
+  display: flex; 
+  align-items: center; 
+} 
+
+#time, #errors, #accuracy, 
+#cpm, #wpm { 
+  /* background-color: #6157bd56; */
+  background-color: #2e2e2e; 
+  height: 60px;
+  width: 70px; 
+  margin: 8px; 
+  padding: 18px 18px 25px 18px; 
+  border-radius: 20%; 
+} 
+
+#cpm, #wpm { 
+  display: block; 
+} 
+
+#header-text { 
+  text-transform: uppercase; 
+  font-size: 0.6rem; 
+  font-weight: 600; 
+} 
+
+#time, #errors, 
+#accuracy, #cpm, 
+#wpm { 
+  font-size: 2.75rem; 
+} 
+
+
+#click-below { 
+  font-size: 1.5rem; 
+  padding: 15px 15px 7px 15px; 
+  color: rgb(184, 184, 184);
+} 
+
+
+#default-text { 
+  font-size: 1.5rem; 
+  margin: 10px; 
+  padding: 15px 100px;
+  color: rgb(94, 94, 94);
+  font-family: 'Type';
+} 
+
+#input-area { 
+  opacity: 0;
+  background-color: #6157bd56; 
+  height: 180px; 
+  width: 80%; 
+  font-size: 1.5rem; 
+  font-weight: 600; 
+  margin: -155px; 
+  padding: 20px; 
+  border: 0px; 
+  z-index: 900;
+} 
+
+#restart-button { 
+  display: none; 
+  margin-top: 200px;
+  background-color: #6157bd56; 
+  color: rgb(184, 184, 184);
+  font-size: 1.5rem; 
+  padding: 10px; 
+  border: 0px;
+  font-family: 'Type';
+  border-radius: 12px;
+  cursor: pointer;
+  transition: opacity 150ms;
+}
+
+#restart-button:hover { 
+  opacity: 0.8;
+}
+
+#restart-button:focus { 
+  opacity: 0.6;
+}
+
+.incorrect { 
+  color: red; 
+  text-decoration: underline; 
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out; 
+} 
+
+.correct { 
+  color: rgb(184, 184, 184);
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out; 
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Monkeytype Clone</title>
+</head>
+<body> 
+  <div id="wrapper"> 
+    <div id="heading-text"> 
+	    Monkeytype Clone by nath.utev
+	  </div> 
+	  <div id="header"> 
+	    <div id="wpm-wrapper"> 
+		    <div id="header_text">WPM</div> 
+		    <div id="wpm">0</div> 
+	    </div> 
+	    <div id="cpm-wrapper"> 
+		    <div id="header_text">CPM</div> 
+		    <div id="cpm">0</div> 
+	    </div>
+			<div id="accuracy-wrapper"> 
+		    <div id="header_text">Accuracy</div> 
+		    <div id="accuracy">100</div> 
+	    </div>
+	    <div id="errors-wrapper"> 
+		    <div id="header_text">Errors</div> 
+		    <div id="errors">0</div> 
+	    </div> 
+      <div id="time-wrapper"> 
+		    <div id="header_text">Time</div> 
+		    <div id="time">60s</div> 
+	    </div>  
+	  </div> 
+
+	  <div id="click-below"> 
+	    ↓ Click below ↓
+	  </div> 
+
+	  <div id="default-text"></div> 
+
+	  <textarea id="input-area" placeholder="..." oninput="processTypedTextbyUser()" onfocus="start()"></textarea> 
+	  <button id="restart-button">
+	    Restart 
+	  </button> 
+  </div> 
+	<script type="module" src="app.js"></script>
+</body>
+</html>
