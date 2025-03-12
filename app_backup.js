@@ -60,7 +60,7 @@ inputArea.oninput = function processTypedTextbyUser() {
   characterTyped++;
   errors = 0;
   cpm = Math.round(((characterTyped / timeElapsed) * 60));
-  wpm = Math.round((((characterTyped / 5) / timeElapsed) * 60));
+  wpm = Math.round((((characterTyped / 5) / timeElapsed) * 60)); //6.4
   cpmText.textContent = cpm;
   wpmText.textContent = wpm;
   let arrayTypedCharacter = defaultText.querySelectorAll('span');

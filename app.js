@@ -9,7 +9,7 @@ let defaultText = document.getElementById("default-text");
 let inputArea = document.getElementById("input-area");
 let restartButton = document.getElementById("restart-button");
 
-let timeLimit = 60; 
+let timeLimit = 60;
 let quantityWords = 50;
 let wpm;
 let cpm;
@@ -22,7 +22,6 @@ let characterTyped = 0;
 let currentWords;
 let currentInput;
 let currentInputArray;
-
 
 inputArea.onfocus = function start() {
   resetValuesAll(); 
@@ -89,7 +88,7 @@ inputArea.oninput = function processTypedTextbyUser() {
   let correctCharacters = (characterTyped - (totalErrors + errors));
   let accuracyVal = ((correctCharacters / characterTyped) * 100);
   accuracyText.textContent = Math.round(accuracyVal);
- 
+
   if (currentInput.length == currentWords.length) {
     updateText();
 
@@ -136,7 +135,7 @@ function resetValuesAll() {
       
 function finishGame() { 
   clearInterval(timer); 
-   
+  
   inputArea.disabled = true;
   defaultText.style.color = "rgb(60, 60, 60)";
   restartButton.style.display = "block"; 
