@@ -1,8 +1,8 @@
-📝 Monkeytype Clone
+#📝 Monkeytype Clone
 
 This project is a simple typing speed test inspired by Monkeytype. 🐒⌨️ It allows users to test their typing speed by displaying random words and calculating metrics like Words Per Minute (WPM), Characters Per Minute (CPM), accuracy, and errors.
 
-✨ Features
+###✨ Features
 
 🎯 Displays random words for typing
 
@@ -14,7 +14,7 @@ This project is a simple typing speed test inspired by Monkeytype. 🐒⌨️ It
 
 🔄 Allows users to restart the test
 
-🛠 Technologies Used
+###🛠 Technologies Used
 
 🌐 HTML
 
@@ -22,7 +22,7 @@ This project is a simple typing speed test inspired by Monkeytype. 🐒⌨️ It
 
 ⚙️ JavaScript (ES6 modules)
 
-🚀 How to Use
+###🚀 How to Use
 
 Open index.html in a browser. 🌍
 
@@ -36,13 +36,13 @@ Once the timer reaches 0, the test ends. ⏲
 
 Click the restart button to try again. 🔄
 
-📂 Project Structure
+###📂 Project Structure
 
 ├── index.html   # 🏗 Main HTML file
 ├── style.css    # 🎨 Styling for the project
 ├── app.js       # ⚙️ Main JavaScript logic
 
-⚡ How It Works
+###⚡ How It Works
 
 The project fetches random words using a word module. 📖
 
@@ -52,7 +52,7 @@ The timer starts as soon as the user begins typing. ⏳
 
 Once time runs out, input is disabled, and the restart button appears. 🛑
 
-🔮 Future Improvements
+###🔮 Future Improvements
 
 ⏱ Add different time settings (30s, 60s, 120s)
 
