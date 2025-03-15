@@ -5,9 +5,9 @@ let cpmText = document.getElementById("cpm");
 let errorText = document.getElementById("errors");
 let timerText = document.getElementById("time");
 let accuracyText = document.getElementById("accuracy");
-let defaultText = document.getElementById("default-text");
-let inputArea = document.getElementById("input-area");
-let restartButton = document.getElementById("restart-button");
+let defaultText = document.getElementById("default_text");
+let inputArea = document.getElementById("input_area");
+let restartButton = document.getElementById("restart_button");
 
 let timeLimit = 60;
 let quantityWords = 50;
@@ -63,10 +63,10 @@ inputArea.oninput = function processTypedTextbyUser() {
   cpmText.textContent = cpm;
   wpmText.textContent = wpm;
   let arrayTypedCharacter = defaultText.querySelectorAll('span');
-  
+
   arrayTypedCharacter.forEach((character, num) => {
     let typedCharacter = currentInputArray[num];
-  
+
     if (typedCharacter == null) {
       character.classList.remove('correct');
       character.classList.remove('incorrect');
@@ -74,7 +74,7 @@ inputArea.oninput = function processTypedTextbyUser() {
     } else if (typedCharacter === character.innerText) {
       character.classList.add('correct');
       character.classList.remove('incorrect');
-      
+
     } else {
       character.classList.remove('correct');
       character.classList.add('incorrect');
@@ -98,7 +98,7 @@ inputArea.oninput = function processTypedTextbyUser() {
 };
 
 function updateTimer() { 
-  if (timeLeft > 0  ) { 
+  if (timeLeft > 0) { 
     timeLeft--; 
   
     timeElapsed++; 
@@ -119,8 +119,10 @@ function resetValuesAll() {
   totalErrors = 0; 
   characterTyped = 0;
   inputArea.disabled = false; 
-    
+  
   inputArea.value = ""; 
+  wpmText.textContent = 0
+  cpmText.textContent = 0
   defaultText.textContent = "";
   accuracyText.textContent = 100; 
   timerText.textContent = timeLeft + 's'; 
@@ -130,9 +132,7 @@ function resetValuesAll() {
 
   clearInterval(timer);
 };
-    
 
-      
 function finishGame() { 
   clearInterval(timer); 
   
