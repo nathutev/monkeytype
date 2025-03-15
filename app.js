@@ -23,6 +23,13 @@ let currentWords;
 let currentInput;
 let currentInputArray;
 
+document.addEventListener("keypress", function(event) {
+  if (event.keyCode == 13) {
+    resetValuesAll(); 
+    updateText(); 
+  }
+});
+
 inputArea.onfocus = function start() {
   resetValuesAll(); 
   updateText(); 
