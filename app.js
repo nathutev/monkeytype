@@ -26,7 +26,7 @@ let currentInputArray;
 document.addEventListener("keydown", function(event) {
   if (event.keyCode == 13) {
     event.preventDefault();
-    if(timer != null){
+    if(timer !== null){
       resetValuesAll(); 
       updateText();
       inputArea.focus();
