@@ -23,6 +23,7 @@ let currentWords;
 let currentInput;
 let currentInputArray;
 let cooldown = false;
+let cooldownTime = 1000 * timelimit
 
 document.addEventListener("keydown", function(event) {
   if (event.keyCode == 13 && !cooldown) {
@@ -37,7 +38,7 @@ document.addEventListener("keydown", function(event) {
     setTimeout(() => {
       cooldown = false;
       console.log("Cooldown ended.");
-  }, timelimit*1000);
+  }, cooldownTime);
   }
 });
 
