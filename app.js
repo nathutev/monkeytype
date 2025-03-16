@@ -9,7 +9,7 @@ let defaultText = document.getElementById("default_text");
 let inputArea = document.getElementById("input_area");
 let restartButton = document.getElementById("restart_button");
 
-let timeLimit = 60;
+let timeLimit = 6;
 let quantityWords = 50;
 let wpm;
 let cpm;
@@ -22,15 +22,22 @@ let characterTyped = 0;
 let currentWords;
 let currentInput;
 let currentInputArray;
+let cooldown = false;
 
 document.addEventListener("keydown", function(event) {
-  if (event.keyCode == 13) {
+  if (event.keyCode == 13 && !cooldown) {
     event.preventDefault();
-    if(timer !== null){
-      resetValuesAll(); 
-      updateText();
-      inputArea.focus();
-    }
+
+    cooldown = true;
+
+    resetValuesAll(); 
+    updateText();
+    inputArea.focus();
+
+    setTimeout(() => {
+      cooldown = false;
+      console.log("Cooldown ended.");
+  }, timelimit*1000);
   }
 });
 
