@@ -23,10 +23,12 @@ let currentWords;
 let currentInput;
 let currentInputArray;
 
-document.addEventListener("keypress", function(event) {
+document.addEventListener("keydown", function(event) {
   if (event.keyCode == 13) {
+    event.preventDefault();
     resetValuesAll(); 
-    updateText(); 
+    updateText();
+    inputArea.focus();
   }
 });
 
