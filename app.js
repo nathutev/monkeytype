@@ -9,7 +9,7 @@ let defaultText = document.getElementById("default_text");
 let inputArea = document.getElementById("input_area");
 let restartButton = document.getElementById("restart_button");
 
-let timeLimit = 6;
+let timeLimit = prompt("Time in s", 60);
 let quantityWords = 50;
 let wpm;
 let cpm;
@@ -37,7 +37,7 @@ document.addEventListener("keydown", function(event) {
 
     setTimeout(() => {
       cooldown = false;
-      console.log("Cooldown ended.");
+      console.log("cooldown ended");
   }, cooldownTime);
   }
 });
