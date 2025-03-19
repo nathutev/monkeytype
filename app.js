@@ -31,8 +31,8 @@ document.addEventListener("keydown", function(event) {
 
     cooldown = true;
 
-    //resetValuesAll(); 
-    //updateText();
+    resetValuesAll(); 
+    updateText();
     inputArea.focus();
 
     setTimeout(() => {
